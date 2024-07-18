@@ -1,0 +1,15 @@
+<form>
+    <!--Campo para nombre de usuario-->
+    <p-iconField iconPosition="left" styleClass="inputmargin">
+        <p-inputIcon styleClass="pi pi-user" />
+        <input type="text" pInputText placeholder="Nombre de usuario" id="username" styleClass="inputmargin" />
+    </p-iconField>
+    <br>
+    <!--Campo para contraseña-->
+    <p-iconField iconPosition="left" styleClass="inputmargin">
+        <p-inputIcon styleClass="pi pi-user" />
+        <p-password [(ngModel)]="value" [toggleMask]="true" type="text" name="password" feedback="false" placeholder="Contraseña" id="password" styleClass="inputmargin"/>
+    </p-iconField>
+    <br>
+    <p-button label="Aceptar" styleClass="formbtnsubmit" />
+</form>
